@@ -17,6 +17,7 @@ services:
 
     mc:
         image: minio/mc@sha256:68d8c80f43908b02daa285e55547131870a1d36b3ffe272c26d7d8f4d52d1e5c
+        restart: no
         depends_on:
             - minio
         container_name: mc
